@@ -43,7 +43,7 @@ import lombok.experimental.SuperBuilder;
 @RequiredArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "CUENTAS")
+@Table(name = "CUENTAS_SPRING")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "TIPO_CUENTA", discriminatorType = DiscriminatorType.STRING)
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "type")
@@ -61,7 +61,7 @@ public abstract class Cuenta implements Serializable {
 
 	@Singular
 	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinTable(name = "CUENTAS_CLIENTES", joinColumns = @JoinColumn(name = "FK_CUENTA"), inverseJoinColumns = @JoinColumn(name = "FK_CLIENTE"))
+	@JoinTable(name = "CUENTAS_CLIENTES_SPRING", joinColumns = @JoinColumn(name = "FK_CUENTA"), inverseJoinColumns = @JoinColumn(name = "FK_CLIENTE"))
 	private Set<Cliente> clientes;
 
 	private static final long serialVersionUID = 1L;

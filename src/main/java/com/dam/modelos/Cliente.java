@@ -34,7 +34,7 @@ import lombok.Singular;
 @AllArgsConstructor
 @RequiredArgsConstructor
 @Entity
-@Table(name = "CLIENTES")
+@Table(name = "CLIENTES_SPRING")
 public class Cliente implements Serializable {
 
 	@Id

@@ -30,7 +30,7 @@ import lombok.Singular;
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "ENTIDADES_FINANCIERAS")
+@Table(name = "ENTIDADES_FINANCIERAS_SPRING")
 public class Banco {
 
 	@Id

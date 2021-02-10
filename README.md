@@ -18,3 +18,11 @@ La aplicación permite realizar las siguientes operaciones:
 10 . Mostar cliente con mayor saldo  
 11 . Mostar proveedor telefónico más usado  
 12 . Salir de la aplicacion
+
+## Requisitos
+
+Es necesario tener instalado:
+
+* Eclipse IDE 2020-03 o superior [https://www.eclipse.org/downloads/](https://www.eclipse.org/downloads/)
+
+* H2 Database Engine [https://www.h2database.com/html/main.html](https://www.h2database.com/html/main.html)

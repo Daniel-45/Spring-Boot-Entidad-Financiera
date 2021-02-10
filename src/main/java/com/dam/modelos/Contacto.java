@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "TELEFONOS")
+@Table(name = "TELEFONOS_CLIENTES_SPRING")
 public class Contacto implements Serializable {
 
 	@Id
